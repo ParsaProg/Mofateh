@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/header/Header";
+import SmoothScrollProvider from "@/src/providers/smooth-scroll";
 
 export const metadata: Metadata = {
   title: "دبیرستان نمونه دولتی شهید مفتح",
@@ -12,8 +14,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html suppressHydrationWarning={true} lang="fa" dir="rtl">
+      <body className="w-[85%] mx-auto">
+        <Header />
+        <div className="mt-[130px]"></div>
+        <SmoothScrollProvider>{children}</SmoothScrollProvider>
+      </body>
     </html>
   );
 }
