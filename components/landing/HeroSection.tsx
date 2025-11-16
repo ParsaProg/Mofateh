@@ -125,7 +125,7 @@ export default function HeroSection() {
                   visible: { opacity: 1, x: 0 },
                 }}
                 transition={{ delay: _i * 0.2 }}
-                className="w-full z-200 p-2 rounded-xl border border-slate-400 text-black flex items-center justify-center gap-x-2"
+                className="w-full z-200 p-2 rounded-xl border border-slate-300 text-black flex items-center justify-center gap-x-2"
                 key={_i}
                 href={val.link}
               >
