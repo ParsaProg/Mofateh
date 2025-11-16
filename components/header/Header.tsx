@@ -22,10 +22,10 @@ export default function Header() {
       animate="visible"
       variants={{
         hidden: { opacity: 0, scaleX: 0.9, width: "0" },
-        visible: { opacity: 1, scaleX: 1, width: "85%" },
+        visible: { opacity: 1, scaleX: 1, width: "90%" },
       }}
       transition={{ duration: 0.3 }}
-      className="border-blue-200 border right-[50%] translate-x-[50%] fixed top-10 z-999999 rounded-2xl overflow-hidden transition-all duration-200 h-20 bg-white shadow-[0px_0px_10px_5px] shadow-[#0037ff1e] flex items-center justify-between p-5"
+      className="border-blue-200 border right-[50%] translate-x-[50%] fixed top-5 z-999999 rounded-2xl overflow-hidden transition-all duration-200 h-20 bg-[#ffffff1a] backdrop-blur-lg shadow-[0px_0px_10px_5px] shadow-[#0037ff1e] flex items-center justify-between p-5"
     >
       <div className="flex items-center gap-x-5">
         <motion.div
