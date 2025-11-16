@@ -20,7 +20,16 @@ export default function MobileHeader() {
   }, [menuRef]);
 
   return (
-    <div className="relative">
+    <motion.div
+      transition={{ delay: 0.5 }}
+      initial="hidden"
+      animate="visible"
+      variants={{
+        hidden: { opacity: 0, x: -200 },
+        visible: { opacity: 1, x: 0 },
+      }}
+      className="relative"
+    >
       <motion.div
         onClick={() => setShowMenu(!showMenu)}
         whileTap={{ scale: 0.91 }}
@@ -56,6 +65,6 @@ export default function MobileHeader() {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 }
