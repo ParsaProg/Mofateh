@@ -11,8 +11,8 @@ import { socialMediaLinks } from "@/src/data/social-media-links";
 
 export default function HeroSection() {
   return (
-    <div className="relative w-full shrink-0 flex items-center justify-center gap-x-5">
-      <section className="shrink-0 flex flex-col items-start gap-y-5 z-100">
+    <div className="[@media(max-width:1496px)]:mt-[150px] [@media(max-width:1190px)]:flex-col relative w-full shrink-0 flex items-center justify-center gap-x-5">
+      <section className="[@media(max-width:1190px)]:w-full shrink-0 flex flex-col items-start [@media(max-width:1190px)]:items-center [@media(max-width:1190px)]:text-center gap-y-5 z-100">
         <motion.h1
           initial="hidden"
           animate="visible"
@@ -21,7 +21,7 @@ export default function HeroSection() {
             visible: { opacity: 1, x: 0 },
           }}
           transition={{ delay: 0.5 }}
-          className="text-black text-5xl w-[400px] font-bold leading-14"
+          className="text-black md:text-5xl md:p-0 px-2 text-4xl w-[400px] font-bold leading-14"
         >
           دبیرستان نمونه دولتی شهید مفتح
         </motion.h1>
@@ -33,14 +33,14 @@ export default function HeroSection() {
             visible: { opacity: 1, x: 0 },
           }}
           transition={{ delay: 0.7 }}
-          className="w-[400px] text-justify text-lg text-slate-600 font-thin"
+          className="[@media(min-width:400px)]:w-[400px] [@media(max-width:400px)]:px-2 w-full [@media(max-width:1190px)]:text-center text-justify text-lg text-slate-600 font-thin"
         >
           مدرسهٔ نمونه دولتی شهید مفتح محیطی منظم و فعال برای پیشرفت تحصیلی
           دانش‌آموزان است. با داشتن معلمان مجرب و برنامه‌ریزی دقیق، این مدرسه
           تلاش می‌کند زمینهٔ رشد علمی و اخلاقی دانش‌آموزان را فراهم کند. شرکت در
           فعالیت‌های علمی و فرهنگی نیز از ویژگی‌های برجسته این مدرسه است.
         </motion.p>
-        <div className="flex items-center gap-x-3">
+        <div className="w-full flex items-center justify-center [@media(max-width:565px)]:flex-col gap-3">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -52,7 +52,7 @@ export default function HeroSection() {
           >
             <motion.button
               whileTap={{ scale: 0.91 }}
-              className="flex items-center gap-x-1 cursor-pointer rounded-full p-3 text-white bg-blue-600 text-md font-bold"
+              className="w-full flex items-center justify-center gap-x-1 cursor-pointer rounded-full [@media(max-width:565px)]:w-[280px] [@media(min-width:565px)]:px-5 py-3 text-white bg-blue-600 text-md font-bold"
             >
               <div className="w-10 h-10 overflow-hidden">
                 <Lottie
@@ -77,7 +77,7 @@ export default function HeroSection() {
             transition={{ delay: 1.1 }}
           >
             <motion.div whileTap={{ scale: 0.91 }}>
-              <button className="bg-[#ffffff20] backdrop-blur-md m-3 flex items-center cursor-pointer rounded-full p-4 text-blue-600 font-bold transition-all duration-200 hover:bg-blue-600 hover:text-white border border-blue-600 text-lg gap-x-2 z-100">
+              <button className="w-full bg-[#ffffff20] backdrop-blur-md flex items-center justify-center cursor-pointer rounded-full [@media(max-width:565px)]:w-[280px] [@media(min-width:565px)]:px-5 py-4 text-center text-blue-600 font-bold transition-all duration-200 hover:bg-blue-600 hover:text-white border border-blue-600 text-lg gap-x-2 z-100">
                 <UserStar size={20} />
                 مشاهده لیست دبیران
               </button>
@@ -93,7 +93,7 @@ export default function HeroSection() {
           visible: { scale: 1, opacity: 1, x: 0 },
         }}
         transition={{ delay: 0.3, duration: 0.5 }}
-        className="-z-1 -mr-20 relative p-10 rounded-full flex items-center justify-center"
+        className="-z-1 [@media(min-width:1190px)]:-mr-20 relative rounded-full flex items-center justify-center"
       >
         <motion.div
           transition={{ delay: 0.9, duration: 0.9 }}
@@ -103,17 +103,17 @@ export default function HeroSection() {
             hidden: { opacity: 0, scale: 0.5 },
             visible: { opacity: 0.3, scale: 1 },
           }}
-          className="absolute -z-1 top-[50%] right-[50%] translate-y-[-50%] translate-x-[50%] bg-blue-600 opacity-[0.5] blur-[100px] w-full h-[800px] rounded-full"
+          className="absolute -z-1 top-[50%] right-[50%] translate-y-[-50%] translate-x-[50%] bg-blue-600 opacity-[0.5] blur-[100px] w-full h-[38vw] rounded-full"
         ></motion.div>
         <Lottie
           animationData={LottieAnimationHero}
           loop={true}
           width={1000}
           height={1000}
-          className="w-[38vw]"
+          className="[@media(min-width:1496px)]:w-[38vw] [@media(max-width:1190px)]:w-[80vw] w-[25vw]"
         />
       </motion.section>
-      <section className="flex flex-col items-start gap-y-8 -mr-20 z-100">
+      <section className="flex flex-col [@media(max-width:1190px)]:m-0 items-start gap-y-8 -mr-20 z-100">
         <div className="grid grid-cols-2 gap-5 w-full">
           {socialMediaLinks.map((val, _i) => {
             return (
