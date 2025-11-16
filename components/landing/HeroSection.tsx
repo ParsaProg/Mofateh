@@ -12,7 +12,7 @@ import { socialMediaLinks } from "@/src/data/social-media-links";
 export default function HeroSection() {
   return (
     <div className="[@media(max-width:1496px)]:mt-[150px] [@media(max-width:1190px)]:flex-col relative w-full shrink-0 flex items-center justify-center gap-x-5">
-      <section className="[@media(max-width:1190px)]:w-full shrink-0 flex flex-col items-start [@media(max-width:1190px)]:items-center [@media(max-width:1190px)]:text-center gap-y-5 z-100">
+      <section className="[@media(max-width:1190px)]:w-full shrink-0 flex flex-col items-start [@media(max-width:1190px)]:items-center [@media(max-width:1190px)]:text-center gap-y-5 z-100 overflow-hidden">
         <motion.h1
           initial="hidden"
           animate="visible"
@@ -21,7 +21,7 @@ export default function HeroSection() {
             visible: { opacity: 1, x: 0 },
           }}
           transition={{ delay: 0.5 }}
-          className="text-black md:text-5xl md:p-0 px-2 text-4xl w-[400px] font-bold leading-14"
+          className="text-black md:text-5xl md:p-0 px-2 text-4xl md:w-[400px] font-bold leading-14"
         >
           دبیرستان نمونه دولتی شهید مفتح
         </motion.h1>
@@ -93,7 +93,7 @@ export default function HeroSection() {
           visible: { scale: 1, opacity: 1, x: 0 },
         }}
         transition={{ delay: 0.3, duration: 0.5 }}
-        className="-z-1 [@media(min-width:1190px)]:-mr-20 relative rounded-full flex items-center justify-center"
+        className="-z-1 [@media(min-width:1190px)]:-mr-20 relative rounded-full flex items-center justify-center "
       >
         <motion.div
           transition={{ delay: 0.9, duration: 0.9 }}
