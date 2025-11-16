@@ -27,7 +27,7 @@ export default function Header() {
         visible: { opacity: 1, scaleX: 1, width: "90%" },
       }}
       transition={{ duration: 0.3 }}
-      className="border-blue-200 border right-[50%] translate-x-[50%] fixed top-5 z-999999 rounded-2xl transition-all duration-200 h-20 bg-[#ffffff79] backdrop-blur-xl shadow-[0px_0px_10px_5px] shadow-[#0037ff1e] flex items-center justify-between p-5"
+      className="w-full border-blue-200 border right-[50%] translate-x-[50%] fixed top-5 z-999999 rounded-2xl transition-all duration-200 h-20 bg-[#ffffff79] backdrop-blur-xl shadow-[0px_0px_10px_5px] shadow-[#0037ff1e] flex items-center justify-between p-5"
     >
       <div className="flex items-center gap-x-5">
         <motion.div
