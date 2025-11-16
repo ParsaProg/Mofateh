@@ -1,6 +1,7 @@
 "use client";
 
 import LottieAnimationHero from "@/public/lotties/Exams Preparation..json";
+import LibraryAnimation from "@/public/lotties/Books stack.json";
 import { motion } from "framer-motion";
 import { UserStar } from "lucide-react";
 import Lottie from "lottie-react";
@@ -51,8 +52,17 @@ export default function HeroSection() {
           >
             <motion.button
               whileTap={{ scale: 0.91 }}
-              className="cursor-pointer rounded-full p-4 text-white bg-blue-600 text-lg font-bold"
+              className="flex items-center gap-x-1 cursor-pointer rounded-full p-3 text-white bg-blue-600 text-md font-bold"
             >
+              <div className="w-10 h-10 overflow-hidden">
+                <Lottie
+                  animationData={LibraryAnimation}
+                  loop={true}
+                  className="w-10 h-10"
+                  width={800}
+                  height={800}
+                />
+              </div>
               عضویت در کتابخانه دیجیتال
             </motion.button>
           </motion.div>
