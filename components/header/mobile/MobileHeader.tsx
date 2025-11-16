@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function MobileHeader() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
-  const menuRef = useRef<HTMLElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
