@@ -1,5 +1,6 @@
 import {
   BadgeInfoIcon,
+  Code2,
   LibrarySquareIcon,
   LogIn,
   ShieldCheck,
@@ -27,8 +28,8 @@ export const headerList = [
     scroller: null,
   },
   {
-    icon: <ShieldCheck size={20} />,
-    title: "کادر اجرایی",
+    icon: <Code2 size={20} />,
+    title: "درباره‌ی برنامه‌نویس",
     scroller: null,
   },
 ];
