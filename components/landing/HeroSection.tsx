@@ -96,7 +96,7 @@ export default function HeroSection() {
                     visible: { opacity: 1, x: 0 },
                   }}
                   transition={{ delay: _i * 0.2 }}
-                  className="w-full z-200 p-3 rounded-full border bg-[#ffffffd5] backdrop-blur-lg border-slate-300 text-black font-bold flex items-center justify-center gap-x-2 text-lg"
+                  className="w-full z-200 p-3 rounded-full border bg-[#ffffffd5] backdrop-blur-lg border-slate-300 text-black font-bold flex items-center justify-center gap-x-2 text-sm sm:text-lg"
                   href={val.link}
                 >
                   {val.icon}
