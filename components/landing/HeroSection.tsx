@@ -52,7 +52,7 @@ export default function HeroSection() {
           >
             <motion.button
               whileTap={{ scale: 0.91 }}
-              className="w-full flex items-center justify-center gap-x-1 cursor-pointer rounded-full [@media(max-width:565px)]:w-[280px] [@media(min-width:565px)]:px-5 py-3 text-white bg-blue-600 text-md font-bold"
+              className="flex items-center justify-center gap-x-1 cursor-pointer rounded-full w-[280px] [@media(min-width:565px)]:px-5 py-3 text-white bg-blue-600 text-md font-bold"
             >
               <div className="w-10 h-10 overflow-hidden">
                 <Lottie
@@ -77,12 +77,34 @@ export default function HeroSection() {
             transition={{ delay: 1.1 }}
           >
             <motion.div whileTap={{ scale: 0.91 }} className="rounded-4xl">
-              <button className="w-full bg-[#ffffff20] backdrop-blur-md flex items-center justify-center cursor-pointer rounded-full [@media(max-width:565px)]:w-[280px] [@media(min-width:565px)]:px-5 py-4 text-center text-blue-600 font-bold transition-all duration-200 hover:bg-blue-600 hover:text-white border border-blue-600 text-lg gap-x-2 z-100">
+              <button className=" bg-[#ffffff20] backdrop-blur-md flex items-center justify-center cursor-pointer rounded-full w-[280px] [@media(min-width:565px)]:px-5 py-4 text-center text-blue-600 font-bold transition-all duration-200 hover:bg-blue-600 hover:text-white border border-blue-600 text-lg gap-x-2 z-100">
                 <UserStar size={20} />
                 مشاهده لیست دبیران
               </button>
             </motion.div>
           </motion.div>
+        </div>
+        <div className="grid grid-cols-2 gap-5 [@media(max-width:572px)]:w-full w-[572px] mt-3">
+          {socialMediaLinks.map((val, _i) => {
+            return (
+              <motion.div key={_i} whileTap={{ scale: 0.91 }}>
+                <motion.a
+                  initial="hidden"
+                  animate="visible"
+                  variants={{
+                    hidden: { opacity: 0, x: 30 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  transition={{ delay: _i * 0.2 }}
+                  className="w-full z-200 p-3 rounded-full border bg-[#ffffffd5] backdrop-blur-lg border-slate-300 text-black font-bold flex items-center justify-center gap-x-2 text-lg"
+                  href={val.link}
+                >
+                  {val.icon}
+                  {val.text}
+                </motion.a>
+              </motion.div>
+            );
+          })}
         </div>
       </section>
       <motion.section
@@ -122,28 +144,6 @@ export default function HeroSection() {
         />
       </motion.section>
       <section className="flex flex-col [@media(max-width:1190px)]:m-0 items-start gap-y-8 -mr-20 z-100">
-        <div className="grid grid-cols-2 gap-5 w-full">
-          {socialMediaLinks.map((val, _i) => {
-            return (
-              <motion.div key={_i} whileTap={{ scale: 0.91 }}>
-                <motion.a
-                  initial="hidden"
-                  animate="visible"
-                  variants={{
-                    hidden: { opacity: 0, x: 30 },
-                    visible: { opacity: 1, x: 0 },
-                  }}
-                  transition={{ delay: _i * 0.2 }}
-                  className="w-full z-200 p-2 rounded-xl border bg-[#ffffff52] backdrop-blur-lg border-slate-300 text-black flex items-center justify-center gap-x-2"
-                  href={val.link}
-                >
-                  {val.icon}
-                  {val.text}
-                </motion.a>
-              </motion.div>
-            );
-          })}
-        </div>
         <div className="grid grid-cols-2 gap-5">
           {HeroGridData.map((val, _i) => {
             return (
