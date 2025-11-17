@@ -76,7 +76,7 @@ export default function HeroSection() {
             }}
             transition={{ delay: 1.1 }}
           >
-            <motion.div whileTap={{ scale: 0.91 }}>
+            <motion.div whileTap={{ scale: 0.91 }} className="rounded-4xl">
               <button className="w-full bg-[#ffffff20] backdrop-blur-md flex items-center justify-center cursor-pointer rounded-full [@media(max-width:565px)]:w-[280px] [@media(min-width:565px)]:px-5 py-4 text-center text-blue-600 font-bold transition-all duration-200 hover:bg-blue-600 hover:text-white border border-blue-600 text-lg gap-x-2 z-100">
                 <UserStar size={20} />
                 مشاهده لیست دبیران
@@ -103,35 +103,45 @@ export default function HeroSection() {
             hidden: { opacity: 0, scale: 0.5 },
             visible: { opacity: 0.3, scale: 1 },
           }}
-          className="absolute -z-1 top-[50%] right-[50%] translate-y-[-50%] translate-x-[50%] bg-blue-600 opacity-[0.5] blur-[100px] w-full h-[38vw] rounded-full"
-        ></motion.div>
+          className="absolute -z-1 top-[50%] right-[50%] translate-y-[-50%] translate-x-[50%] bg-blue-600 opacity-[0.5] blur-[100px] w-full h-[35vw] rounded-full"
+        >
+          <style>{`
+    @supports not (backdrop-filter: blur(10px)) {
+      .fallback-blur {
+        box-shadow: 0 0 100px 50px rgba(59, 130, 246, 0.5);
+      }
+    }
+  `}</style>
+        </motion.div>
         <Lottie
           animationData={LottieAnimationHero}
           loop={true}
           width={1000}
           height={1000}
-          className="[@media(min-width:1496px)]:w-[38vw] [@media(max-width:1190px)]:w-[80vw] w-[25vw]"
+          className="[@media(min-width:1496px)]:w-[38vw] [@media(max-width:1190px)]:w-[80vw] w-[30vw]"
         />
       </motion.section>
       <section className="flex flex-col [@media(max-width:1190px)]:m-0 items-start gap-y-8 -mr-20 z-100">
         <div className="grid grid-cols-2 gap-5 w-full">
           {socialMediaLinks.map((val, _i) => {
             return (
-              <motion.a
-                initial="hidden"
-                animate="visible"
-                variants={{
-                  hidden: { opacity: 0, x: 30 },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                transition={{ delay: _i * 0.2 }}
-                className="w-full z-200 p-2 rounded-xl border border-slate-300 text-black flex items-center justify-center gap-x-2"
-                key={_i}
-                href={val.link}
-              >
-                {val.icon}
-                {val.text}
-              </motion.a>
+              <motion.div whileTap={{ scale: 0.91 }}>
+                <motion.a
+                  initial="hidden"
+                  animate="visible"
+                  variants={{
+                    hidden: { opacity: 0, x: 30 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  transition={{ delay: _i * 0.2 }}
+                  className="w-full z-200 p-2 rounded-xl border bg-[#ffffff52] backdrop-blur-lg border-slate-300 text-black flex items-center justify-center gap-x-2"
+                  key={_i}
+                  href={val.link}
+                >
+                  {val.icon}
+                  {val.text}
+                </motion.a>
+              </motion.div>
             );
           })}
         </div>
