@@ -1,7 +1,7 @@
 "use client";
 
 import LottieAnimationHero from "@/public/lotties/Exams Preparation..json";
-import LibraryAnimation from "@/public/lotties/Books stack.json";
+import LibraryAnimation from "@/public/lotties/Book Animation.json";
 import { motion } from "framer-motion";
 import { UserStar } from "lucide-react";
 import Lottie from "lottie-react";
