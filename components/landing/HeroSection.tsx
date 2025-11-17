@@ -40,7 +40,7 @@ export default function HeroSection() {
           تلاش می‌کند زمینهٔ رشد علمی و اخلاقی دانش‌آموزان را فراهم کند. شرکت در
           فعالیت‌های علمی و فرهنگی نیز از ویژگی‌های برجسته این مدرسه است.
         </motion.p>
-        <div className="w-full flex items-center justify-center [@media(max-width:565px)]:flex-col gap-3">
+        <div className="w-full flex items-center justify-center [@media(max-width:655px)]:flex-col gap-3">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -140,7 +140,7 @@ export default function HeroSection() {
           loop={true}
           width={1000}
           height={1000}
-          className="[@media(min-width:1496px)]:w-[38vw] [@media(max-width:1190px)]:w-[80vw] w-[30vw]"
+          className="[@media(min-width:1496px)]:w-[43vw] [@media(max-width:1190px)]:w-[80vw] w-[30vw]"
         />
       </motion.section>
       <section className="flex flex-col [@media(max-width:1190px)]:m-0 items-start gap-y-8 -mr-20 z-100">
