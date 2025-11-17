@@ -3,10 +3,12 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import MainLogo from "@/public/images/logo-main.jpg";
-import { LibraryBigIcon } from "lucide-react";
+import BookAnimation from "@/public/lotties/Book Animation.json";
 import { useEffect, useState } from "react";
 import DesktopHeader from "./desktop/DesktopHeader";
 import MobileHeader from "./mobile/MobileHeader";
+import Lottie from "lottie-react";
+import { LibraryBigIcon } from "lucide-react";
 
 export default function Header() {
   const [showHeaderSectionRef, setShowHeaderSectionRef] =
@@ -39,7 +41,7 @@ export default function Header() {
           }}
         >
           <Image
-            draggable={false  }
+            draggable={false}
             alt="نمونه دولتی شهید مفتح"
             src={MainLogo.src}
             width={800}
