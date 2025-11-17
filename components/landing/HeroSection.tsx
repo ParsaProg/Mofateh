@@ -84,7 +84,7 @@ export default function HeroSection() {
             </motion.div>
           </motion.div>
         </div>
-        <div className="grid grid-cols-2 gap-5 [@media(max-width:572px)]:w-full w-[572px] mt-3">
+        <div className="grid grid-cols-2 gap-3 [@media(max-width:572px)]:w-full w-[572px] mt-3">
           {socialMediaLinks.map((val, _i) => {
             return (
               <motion.div key={_i} whileTap={{ scale: 0.91 }}>
