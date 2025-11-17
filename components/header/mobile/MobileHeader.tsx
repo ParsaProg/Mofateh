@@ -6,10 +6,16 @@ import { useEffect, useRef, useState } from "react";
 export default function MobileHeader() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+      if (
+        menuRef.current &&
+        buttonRef.current &&
+        !buttonRef.current.contains(e.target as Node) &&
+        !menuRef.current.contains(e.target as Node)
+      ) {
         setShowMenu(false);
       }
     };
@@ -18,6 +24,14 @@ export default function MobileHeader() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [menuRef]);
+
+  useEffect(() => {
+    if (showMenu) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "auto";
+    }
+  }, [showMenu]);
 
   return (
     <motion.div
@@ -31,6 +45,7 @@ export default function MobileHeader() {
       className="relative"
     >
       <motion.div
+        ref={buttonRef}
         onClick={() => setShowMenu(!showMenu)}
         whileTap={{ scale: 0.91 }}
         className="cursor-pointer rounded-xl border border-slate-400 p-3 text-black"
