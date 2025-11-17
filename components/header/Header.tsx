@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import MainLogo from "@/public/images/logo-main.jpg";
 import { LibraryBigIcon } from "lucide-react";
-import { headerList } from "@/src/data/headerList";
 import { useEffect, useState } from "react";
 import DesktopHeader from "./desktop/DesktopHeader";
 import MobileHeader from "./mobile/MobileHeader";
@@ -40,6 +39,7 @@ export default function Header() {
           }}
         >
           <Image
+            draggable={false  }
             alt="نمونه دولتی شهید مفتح"
             src={MainLogo.src}
             width={800}
@@ -67,7 +67,10 @@ export default function Header() {
           >
             <div className="absolute inset-0 bg-blue-950 w-0 h-[30px] rounded-full group-hover:w-full group-hover:h-[50px] transition-all duration-300 group-hover:rounded-none top-[50%] translate-x-[50%] translate-y-[-50%] right-[50%] z-1"></div>
             <LibraryBigIcon className="z-2" size={20} />
-            <h1 className="z-2 [@media(min-width:540px)]:block hidden"> ورود | عضویت در کتابخانه دیجیتال</h1>
+            <h1 className="z-2 [@media(min-width:540px)]:block hidden">
+              {" "}
+              ورود | عضویت در کتابخانه دیجیتال
+            </h1>
           </motion.div>
         </motion.div>
         <div className="[@media(max-width:1480px)]:block hidden">
