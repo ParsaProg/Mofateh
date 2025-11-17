@@ -125,7 +125,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-2 gap-5 w-full">
           {socialMediaLinks.map((val, _i) => {
             return (
-              <motion.div whileTap={{ scale: 0.91 }}>
+              <motion.div key={_i} whileTap={{ scale: 0.91 }}>
                 <motion.a
                   initial="hidden"
                   animate="visible"
@@ -135,7 +135,6 @@ export default function HeroSection() {
                   }}
                   transition={{ delay: _i * 0.2 }}
                   className="w-full z-200 p-2 rounded-xl border bg-[#ffffff52] backdrop-blur-lg border-slate-300 text-black flex items-center justify-center gap-x-2"
-                  key={_i}
                   href={val.link}
                 >
                   {val.icon}
