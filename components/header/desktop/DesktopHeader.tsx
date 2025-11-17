@@ -20,7 +20,7 @@ export default function DesktopHeader({ showHeaderSectionRef }: any) {
               transition={{ delay: _i * 0.09 }}
               animate="visible"
               variants={{
-                hidden: { opacity: 0.3, y: 50 },
+                hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0 },
               }}
               key={_i}
