@@ -27,9 +27,9 @@ export default function MobileHeader() {
 
   useEffect(() => {
     if (showMenu) {
-      document.body.style.overflowY = "hidden";
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflowY = "auto";
+      document.body.style.overflow = "auto";
     }
   }, [showMenu]);
 
