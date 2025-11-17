@@ -33,7 +33,7 @@ export default function HeroSection() {
             visible: { opacity: 1, x: 0 },
           }}
           transition={{ delay: 0.7 }}
-          className="[@media(min-width:400px)]:w-[400px] [@media(max-width:400px)]:px-2 w-full [@media(max-width:1190px)]:text-center text-justify text-lg text-slate-600 font-thin"
+          className="[@media(min-width:401px)]:w-[350px] [@media(max-width:400px)]:px-2 w-full [@media(max-width:1190px)]:text-center text-justify text-lg text-slate-600 font-thin"
         >
           مدرسهٔ نمونه دولتی شهید مفتح محیطی منظم و فعال برای پیشرفت تحصیلی
           دانش‌آموزان است. با داشتن معلمان مجرب و برنامه‌ریزی دقیق، این مدرسه
