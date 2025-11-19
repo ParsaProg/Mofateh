@@ -1,0 +1,25 @@
+.swiper-pagination-bullet {
+  display: none !important;
+}
+
+.swiper-button-prev {
+  display: none !important;
+}
+
+.swiper-button-next {
+  display: none !important;
+}
+
+@media (max-width: 1000px) and (min-width: 565px){
+  .main-list-container{
+    width: 45vw;
+    height: 45vw;
+  }
+}
+
+@media (max-width: 565px){
+  .main-list-container{
+    width: 100%;
+    height: 90vw;
+  }
+}
