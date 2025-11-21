@@ -13,16 +13,6 @@ export const headerList = [
     title: "معرفی مدرسه",
     scroller: null,
   },
-  {
-    icon: <Image size={20} />,
-    title: "گالری تصاویر",
-    scroller: null,
-  },
-  {
-    icon: <UserCheck size={20} />,
-    title: "دانش‌آموزان برتر",
-    scroller: null,
-  },
   { icon: <UserStar size={20} />, title: "دبیران", scroller: null },
   { icon: <LogIn size={20} />, title: "شرایط ثبت‌نام", scroller: null },
 
