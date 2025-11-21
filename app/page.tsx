@@ -1,6 +1,6 @@
 import HeroSection from "@/components/landing/HeroSection";
 import TeachersLanding from "@/components/landing/Teachers";
-import GallerySection from "@/components/landing/GallerySection";
+import GallerySection from "@/components/landing/SchoolIntrducing";
 
 export default function Home() {
   return (
