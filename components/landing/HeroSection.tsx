@@ -77,7 +77,7 @@ export default function HeroSection() {
             transition={{ delay: 1.1 }}
           >
             <motion.div whileTap={{ scale: 0.91 }} className="rounded-4xl">
-              <button className=" bg-[#ffffff20] backdrop-blur-md flex items-center justify-center cursor-pointer rounded-full w-[280px] [@media(min-width:565px)]:px-5 py-4 text-center text-blue-600 font-bold transition-all duration-200 hover:bg-blue-600 hover:text-white border border-blue-600 text-lg gap-x-2 z-100">
+              <button className=" bg-[#ffffff4e] backdrop-blur-sm flex items-center justify-center cursor-pointer rounded-full w-[280px] [@media(min-width:565px)]:px-5 py-4 text-center text-blue-600 font-bold transition-all duration-200 hover:bg-blue-600 hover:text-white border border-blue-600 text-lg gap-x-2 z-100">
                 <UserStar size={20} />
                 مشاهده لیست دبیران
               </button>
@@ -125,7 +125,7 @@ export default function HeroSection() {
             hidden: { opacity: 0, scale: 0.5 },
             visible: { opacity: 0.3, scale: 1 },
           }}
-          className="absolute -z-1 top-[50%] right-[50%] translate-y-[-50%] translate-x-[50%] bg-blue-600 opacity-[0.5] blur-[100px] w-full h-[35vw] rounded-full"
+          className="absolute -z-1 top-[50%] right-[50%] translate-y-[-50%] translate-x-[50%] bg-blue-600 opacity-[0.5] blur-[100px] w-full h-[35vw] rounded-full [@media(min-width:1400px)]:-mr-20"
         >
           <style>{`
     @supports not (backdrop-filter: blur(10px)) {
@@ -140,7 +140,7 @@ export default function HeroSection() {
           loop={true}
           width={1000}
           height={1000}
-          className="[@media(min-width:1496px)]:w-[43vw] [@media(max-width:1190px)]:w-[80vw] w-[30vw]"
+          className="[@media(min-width:1496px)]:w-[43vw] [@media(max-width:1190px)]:w-[80vw] w-[30vw] [@media(min-width:1400px)]:-mr-20"
         />
       </motion.section>
       <section className="flex flex-col [@media(max-width:1190px)]:m-0 items-start gap-y-8 -mr-20 z-100">
