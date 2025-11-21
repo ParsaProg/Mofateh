@@ -123,52 +123,52 @@ export default function GallerySection() {
                   رتبه‌ی مدرسه
                 </div>
               </section>
-              <div className="flex items-center gap-x-5"><div className="flex flex-col items-center gap-y-2 text-center mt-3">
-                <h1 className="font-bold text-xl text-black">
-                  {convertToFarsiNumbers("416")}
-                </h1>
-                <div className="text-white px-4 py-2 text-md font-bold bg-pink-600 rounded-md">
-                  کشور
+              <div className="flex items-center gap-x-5  [@media(max-width:1190px)]:justify-center w-full">                <div className="flex flex-col items-center gap-y-2 text-center mt-3">
+                  <h1 className="font-bold text-xl text-black">
+                    {convertToFarsiNumbers("416")}
+                  </h1>
+                  <div className="text-white px-4 py-2 text-md font-bold bg-pink-600 rounded-md">
+                    کشور
+                  </div>
+                  <h5 className="font-thin text-slate-600 text-xs w-full">
+                    از
+                    <strong className="font-bold text-black">
+                      {convertToFarsiNumbers(" 18,086 ")}
+                    </strong>
+                    مدرسه
+                  </h5>
                 </div>
-                <h5 className="font-thin text-slate-600 text-xs w-full">
-                  از
-                  <strong className="font-bold text-black">
-                    {convertToFarsiNumbers("18,086")}
-                  </strong>
-                  مدرسه
-                </h5>
+                <div className="flex flex-col items-center gap-y-2 text-center mt-3">
+                  <h1 className="font-bold text-xl text-black">
+                    {convertToFarsiNumbers("33")}
+                  </h1>
+                  <div className="text-white px-4 py-2 text-md font-bold bg-orange-600 rounded-md">
+                    استان
+                  </div>
+                  <h5 className="font-thin text-slate-600 text-xs">
+                    از{" "}
+                    <strong className="font-bold text-black">
+                      {convertToFarsiNumbers("1,291")}
+                    </strong>{" "}
+                    مدرسه
+                  </h5>
+                </div>
+                <div className="flex flex-col items-center gap-y-2 text-center mt-3">
+                 <h1 className="font-bold text-xl text-black">
+                    {convertToFarsiNumbers("1")}
+                  </h1>
+                  <div className="text-white px-4 py-2 text-md font-bold bg-cyan-600 rounded-md">
+                    ناحیه
+                  </div>
+                  <h5 className="font-thin text-slate-600 text-xs">
+                    از{" "}
+                    <strong className="font-bold text-black">
+                      {convertToFarsiNumbers("39")}
+                    </strong>{" "}
+                    مدرسه
+                  </h5>
+                </div>
               </div>
-              <div className="flex flex-col items-center gap-y-2 text-center mt-5">
-                <h1 className="font-bold text-xl text-black">
-                  {convertToFarsiNumbers("33")}
-                </h1>
-                <div className="text-white px-4 py-2 text-md font-bold bg-orange-600 rounded-md">
-                  استان
-                </div>
-                <h5 className="font-thin text-slate-600 text-xs">
-                  از{" "}
-                  <strong className="font-bold text-black">
-                    {convertToFarsiNumbers("1,291")}
-                  </strong>{" "}
-                  مدرسه
-                </h5>
-              </div>
-              <div className="flex flex-col items-center gap-y-2 text-center mt-5">
-                <h1 className="font-bold text-xl text-black">
-                  {convertToFarsiNumbers("1")}
-                </h1>
-                <div className="text-white px-4 py-2 text-md font-bold bg-cyan-600 rounded-md">
-                  ناحیه
-                </div>
-                <h5 className="font-thin text-slate-600 text-xs">
-                  از{" "}
-                  <strong className="font-bold text-black">
-                    {convertToFarsiNumbers("39")}
-                  </strong>{" "}
-                  مدرسه
-                </h5>
-              </div></div>
-              
             </div>
           </div>
         </div>
