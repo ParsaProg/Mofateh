@@ -45,7 +45,7 @@ export default function GallerySectionList({
             <SwiperSlide key={index}>
               <div
                 style={{
-                  backgroundImage: "url(https://ayandehsazanejahrom.ir/wp-content/uploads/2024/03/IMG_20240309_160049_385-1024x768.jpg)",
+                  backgroundImage: `url(${picture})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
