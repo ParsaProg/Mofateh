@@ -50,7 +50,7 @@ export default function GallerySectionList({
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
                 }}
-                className=" bg-white w-[30vw] h-[30vw] rounded-xl  main-list-container"
+                className=" bg-white w-[30vw] h-[30vw] rounded-xl main-list-container"
               >
                 {/* Replace with actual image when you have picture data */}
                 {/* <img src={picture.url} alt={picture.alt} className="w-full h-full object-cover rounded-lg" /> */}
