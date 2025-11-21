@@ -130,11 +130,11 @@ export default function GallerySection() {
                 <div className="text-white px-4 py-2 text-md font-bold bg-pink-600 rounded-md">
                   کشور
                 </div>
-                <h5 className="font-thin text-slate-600 text-xs">
-                  از{" "}
+                <h5 className="font-thin text-slate-600 text-xs w-full">
+                  از
                   <strong className="font-bold text-black">
                     {convertToFarsiNumbers("18,086")}
-                  </strong>{" "}
+                  </strong>
                   مدرسه
                 </h5>
               </div>
