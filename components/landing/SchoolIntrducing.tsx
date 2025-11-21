@@ -59,7 +59,7 @@ export default function GallerySection() {
           <h1 className="text-slate-800 font-bold text-xl">
             دبیرستان پسرانه نمونه دولتی شهید مفتح جهرم
           </h1>
-          <div className="flex items-center gap-x-3">
+          <div className="flex items-center gap-3 flex-wrap">
             {schoolCatList.map((cat, _i) => {
               return (
                 <div
@@ -123,7 +123,7 @@ export default function GallerySection() {
                   رتبه‌ی مدرسه
                 </div>
               </section>
-              <div className="flex items-center gap-x-5"><div className="flex flex-col items-center gap-y-2 text-center mt-5">
+              <div className="flex items-center gap-x-5"><div className="flex flex-col items-center gap-y-2 text-center mt-3">
                 <h1 className="font-bold text-xl text-black">
                   {convertToFarsiNumbers("416")}
                 </h1>
@@ -177,7 +177,7 @@ export default function GallerySection() {
           height={800}
           src={MofatehMainImage.src}
           alt="نمونه دولتی شهید مفتح | معرفی"
-          className="rounded-xl [@media(min-width:1190px)]:w-[50vw] [@media(max-width:1190px)]:w-full w-[35vw]"
+          className="rounded-xl [@media(min-width:1190px)]:w-[45vw] [@media(max-width:1190px)]:w-full w-[35vw]"
         />
       </div>
     </div>
