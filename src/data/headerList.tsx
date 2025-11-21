@@ -13,7 +13,7 @@ export const headerList = [
     title: "معرفی مدرسه",
     scroller: null,
   },
-  { icon: <UserStar size={20} />, title: "دبیران", scroller: null },
+  { icon: <UserStar size={20} />, title: "کادر مدرسه", scroller: null },
   { icon: <LogIn size={20} />, title: "شرایط ثبت‌نام", scroller: null },
 
   {
