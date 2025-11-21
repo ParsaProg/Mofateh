@@ -78,15 +78,15 @@ export default function GallerySection() {
             آقای احقاق بر عهده دارد.
           </p>
 
-          <div className="flex [@media(max-width:1430px)]:flex-col gap-y-13 items-start gap-x-13 w-full mt-5">
-            <div className="">
+          <div className="flex flex-wrap gap-y-13 items-start gap-x-13 w-full mt-5">
+            <div className="w-full">
               <section className="flex items-center gap-x-2">
                 <ChartNoAxesColumn size={20} />
                 <div className="text-2xl font-bold text-black">
                   امتیازات مدرسه
                 </div>
               </section>
-              <div className="flex items-center mt-3 gap-x-10 w-full">
+              <div className="flex  max-[540px]:justify-center items-center mt-3 gap-x-10 w-full">
                 <div className="relative">
                   <DoughnutChart data={data[0]} options={options} />
                   <h1 className="absolute top-[50%] translate-y-[-50%] text-black right-[50%] translate-x-[50%] z-100">
@@ -116,14 +116,15 @@ export default function GallerySection() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="w-full">
               <section className="flex items-center gap-x-2">
                 <Medal size={20} />
                 <div className="text-2xl font-bold text-black">
                   رتبه‌ی مدرسه
                 </div>
               </section>
-              <div className="flex items-center gap-x-5  [@media(max-width:1190px)]:justify-center w-full">                <div className="flex flex-col items-center gap-y-2 text-center mt-3">
+              <div className="max-[540px]:justify-center flex items-center gap-x-5 w-full">
+                <div className="flex flex-col items-center gap-y-2 text-center mt-3">
                   <h1 className="font-bold text-xl text-black">
                     {convertToFarsiNumbers("416")}
                   </h1>
