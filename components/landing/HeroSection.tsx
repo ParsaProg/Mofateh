@@ -7,7 +7,7 @@ import { UserStar } from "lucide-react";
 import Lottie from "lottie-react";
 import convertToFarsiNumbers from "@/src/functions/EnToFnNumbers";
 import { HeroGridData } from "@/src/data/hero-grid-data";
-import { socialMediaLinks } from "@/src/data/social-media-links";
+import { socialMediaLinks } from "@/src/data/social-media-links";   
 
 export default function HeroSection() {
   return (
