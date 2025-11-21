@@ -79,7 +79,7 @@ export default function GallerySection() {
           </p>
 
           <div className="flex flex-wrap gap-y-13 items-start gap-x-13 w-full mt-5">
-            <div className="w-full">
+            <div className="">
               <section className="flex items-center gap-x-2">
                 <ChartNoAxesColumn size={20} />
                 <div className="text-2xl font-bold text-black">
@@ -116,7 +116,7 @@ export default function GallerySection() {
                 </div>
               </div>
             </div>
-            <div className="w-full">
+            <div>
               <section className="flex items-center gap-x-2">
                 <Medal size={20} />
                 <div className="text-2xl font-bold text-black">
