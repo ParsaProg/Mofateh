@@ -1,31 +1,43 @@
 import Image from "next/image";
 import LandingSectionTitle from "../ui/landingSectionTitle";
+import { SchoolWorkersData } from "@/src/data/school-workers";
 
 export function SchoolWorkers() {
   return (
-    <div className="w-full">
+    <div className="mt-10 w-full">
       <LandingSectionTitle title="کادر مدرسه" />
-      <div className="mt-5 grid grid-cols-5 isolate">
-        <div className="group cursor-pointer overflow-hidden relative rounded-xl w-[220px] h-[200px]">
-          <Image
-            unoptimized
-            src={
-              "https://static.digiato.com/digiato/2022/07/Mr.-Qasemii-1.jpg.webp"
-            }
-            alt="علی پورشرافتان | دبیر ریاضی"
-            width={800}
-            height={800}
-            className="w-[220px] h-[200px]"
-          />
-          <div className="">
-            <div
-              className="group-hover:opacity-0 transition-opacity duration-200 absolute top-0 right-0 inset-0 bg-[#0e1b35] w-[220px] h-[200px]"
-              style={{
-                mixBlendMode: "color",
-              }}
-            ></div>
-          </div>
-        </div>
+      <div className="w-full mt-8 gap-3 grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 isolate">
+        {SchoolWorkersData.map((item, _i) => {
+          return (
+            <div key={_i} className="flex flex-col items-start">
+              <div className="group cursor-pointer overflow-hidden relative rounded-xl w-full ">
+                <Image
+                  unoptimized
+                  src={
+                    "https://static.digiato.com/digiato/2022/07/Mr.-Qasemii-1.jpg.webp"
+                  }
+                  alt={item.name}
+                  width={900}
+                  height={900}
+                  className=" w-full"
+                />
+
+                <div className="">
+                  <div
+                    className="group-hover:opacity-0 transition-opacity duration-200 absolute top-0 right-0 inset-0 bg-[#0e1b35] w-full"
+                    style={{
+                      mixBlendMode: "color",
+                    }}
+                  ></div>
+                </div>
+              </div>
+              <section className="flex w-full items-center justify-between">
+                <div className="font-bold sm:text-xl text-md mt-3">علی پورشرافتان</div>
+              </section>
+              <div className="font-thin sm:text-md text-sm text-slate-800 ">دکترای ریاضی کاربردی | <strong className="font-bold text-black">بهینه سازی</strong></div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
