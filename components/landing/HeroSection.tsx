@@ -162,7 +162,7 @@ export default function HeroSection() {
                 <h1 dir="ltr" className="text-black font-bold text-2xl">
                   {convertToFarsiNumbers(val.title)}
                 </h1>
-                <h2 className="p-1 text-slate-700 text-sm w-[180px] text-center font-bold">
+                <h2 className="p-1 text-slate-700 text-sm min-[440px]:w-[180px] w-full text-center font-bold">
                   {val.subTitle}
                 </h2>
               </motion.div>
