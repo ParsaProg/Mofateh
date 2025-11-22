@@ -54,7 +54,7 @@ export default function GallerySection() {
     <div className="mt-20 w-full flex flex-col items-start overflow-hidden">
       <LandingSectionTitle title="معرفی مدرسه" />
 
-      <div className="w-full [@media(max-width:1190px)]:flex-col-reverse [@media(max-width:1190px)]:gap-y-5 flex items-start justify-between gap-x-10 mt-5">
+      <div className="w-full [@media(max-width:1340px)]:flex-col-reverse [@media(max-width:1340px)]:gap-y-5 flex items-start justify-between gap-x-10 mt-5">
         <div className="flex flex-col items-start gap-y-3">
           <h1 className="text-slate-800 font-bold text-xl">
             دبیرستان پسرانه نمونه دولتی شهید مفتح جهرم
@@ -180,7 +180,7 @@ export default function GallerySection() {
           height={800}
           src={MofatehMainImage.src}
           alt="نمونه دولتی شهید مفتح | معرفی"
-          className="h-full rounded-xl [@media(min-width:1190px)]:w-[48vw] [@media(max-width:1190px)]:w-full w-[35vw]"
+          className="h-full rounded-xl [@media(min-width:1340px)]:w-[40vw] [@media(max-width:1340px)]:w-full w-[35vw]"
         />
       </div>
     </div>
