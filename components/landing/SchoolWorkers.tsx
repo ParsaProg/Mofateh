@@ -6,7 +6,7 @@ export function SchoolWorkers() {
   return (
     <div className="mt-10 w-full">
       <LandingSectionTitle title="کادر مدرسه" />
-      <div className="w-full mt-8 gap-3 grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 isolate">
+      <div className="w-full mt-8 gap-x-3 gap-y-8 grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 isolate">
         {SchoolWorkersData.map((item, _i) => {
           return (
             <div key={_i} className="flex flex-col items-start">
