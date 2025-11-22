@@ -77,7 +77,6 @@ export default function GallerySection() {
             ریاضی، تجربی و انسانی، خدمات آموزشی ارائه می‌نماید. مدیریت مجموعه را
             آقای احقاق بر عهده دارد.
           </p>
-
           <div className="flex flex-wrap gap-y-13 items-start gap-x-13 w-full mt-5">
             <div className="">
               <section className="flex items-center gap-x-2">
@@ -86,7 +85,7 @@ export default function GallerySection() {
                   امتیازات مدرسه
                 </div>
               </section>
-              <div className="flex  max-[540px]:justify-center items-center mt-3 gap-x-10 w-full">
+              <div className="flex  max-[540px]:justify-center items-center mt-3 gap-x-5">
                 <div className="relative">
                   <DoughnutChart data={data[0]} options={options} />
                   <h1 className="absolute top-[50%] translate-y-[-50%] text-black right-[50%] translate-x-[50%] z-100">
@@ -155,7 +154,7 @@ export default function GallerySection() {
                   </h5>
                 </div>
                 <div className="flex flex-col items-center gap-y-2 text-center mt-3">
-                 <h1 className="font-bold text-xl text-black">
+                  <h1 className="font-bold text-xl text-black">
                     {convertToFarsiNumbers("1")}
                   </h1>
                   <div className="text-white px-4 py-2 text-md font-bold bg-cyan-600 rounded-md">
@@ -172,13 +171,16 @@ export default function GallerySection() {
               </div>
             </div>
           </div>
+
+          
         </div>
+
         <Image
           width={800}
           height={800}
           src={MofatehMainImage.src}
           alt="نمونه دولتی شهید مفتح | معرفی"
-          className="rounded-xl [@media(min-width:1190px)]:w-[45vw] [@media(max-width:1190px)]:w-full w-[35vw]"
+          className="h-full rounded-xl [@media(min-width:1190px)]:w-[48vw] [@media(max-width:1190px)]:w-full w-[35vw]"
         />
       </div>
     </div>
