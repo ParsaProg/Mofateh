@@ -7,7 +7,8 @@ import { UserStar } from "lucide-react";
 import Lottie from "lottie-react";
 import convertToFarsiNumbers from "@/src/functions/EnToFnNumbers";
 import { HeroGridData } from "@/src/data/hero-grid-data";
-import { socialMediaLinks } from "@/src/data/social-media-links";   
+import { socialMediaLinks } from "@/src/data/social-media-links";
+import SchoolMap from "../ui/map/SchoolMap";
 
 export default function HeroSection() {
   return (
@@ -21,7 +22,7 @@ export default function HeroSection() {
             visible: { opacity: 1, x: 0 },
           }}
           transition={{ delay: 0.5 }}
-          className="text-black md:text-5xl md:p-0 px-2 text-4xl md:w-[400px] font-bold leading-14"
+          className="text-black md:text-5xl md:p-0 px-2 text-4xl min-[1190px]:w-[400px] font-bold leading-14"
         >
           دبیرستان نمونه دولتی شهید مفتح
         </motion.h1>
@@ -33,7 +34,7 @@ export default function HeroSection() {
             visible: { opacity: 1, x: 0 },
           }}
           transition={{ delay: 0.7 }}
-          className="[@media(min-width:401px)]:w-[350px] [@media(max-width:400px)]:px-2 w-full [@media(max-width:1190px)]:text-center text-justify text-lg text-slate-600 font-thin"
+          className="[@media(min-width:1190px)]:w-[350px] [@media(max-width:400px)]:px-2 w-full [@media(max-width:1190px)]:text-center text-justify text-lg text-slate-600 font-thin"
         >
           مدرسهٔ نمونه دولتی شهید مفتح محیطی منظم و فعال برای پیشرفت تحصیلی
           دانش‌آموزان است. با داشتن معلمان مجرب و برنامه‌ریزی دقیق، این مدرسه
@@ -125,7 +126,7 @@ export default function HeroSection() {
             hidden: { opacity: 0, scale: 0.5 },
             visible: { opacity: 0.3, scale: 1 },
           }}
-          className="absolute -z-1 top-[50%] right-[50%] translate-y-[-50%] translate-x-[50%] bg-blue-600 opacity-[0.5] blur-[100px] w-full h-[35vw] rounded-full [@media(min-width:1400px)]:-mr-20"
+          className="absolute -z-1 top-[50%] right-[50%] translate-y-[-50%] translate-x-[50%] bg-blue-600 opacity-[0.5] blur-[100px] w-full h-[35vw] rounded-full"
         >
           <style>{`
     @supports not (backdrop-filter: blur(10px)) {
@@ -140,11 +141,11 @@ export default function HeroSection() {
           loop={true}
           width={1000}
           height={1000}
-          className="[@media(min-width:1496px)]:w-[43vw] [@media(max-width:1190px)]:w-[80vw] w-[30vw] [@media(min-width:1400px)]:-mr-20"
+          className="[@media(min-width:1496px)]:w-[43vw] [@media(max-width:1190px)]:w-[80vw] w-[30vw]"
         />
       </motion.section>
-      <section className="flex flex-col [@media(max-width:1190px)]:m-0 items-start gap-y-8 -mr-20 z-100">
-        <div className="grid grid-cols-2 gap-5">
+      <section className="flex flex-col w-full [@media(max-width:1190px)]:m-0 items-start gap-y-8 -mr-20 z-100">
+        <div className="grid grid-cols-2 gap-5 w-full">
           {HeroGridData.map((val, _i) => {
             return (
               <motion.div
@@ -161,12 +162,15 @@ export default function HeroSection() {
                 <h1 dir="ltr" className="text-black font-bold text-2xl">
                   {convertToFarsiNumbers(val.title)}
                 </h1>
-                <h2 className="text-slate-700 text-sm w-[130px] text-center font-bold">
+                <h2 className="p-1 text-slate-700 text-sm w-[180px] text-center font-bold">
                   {val.subTitle}
                 </h2>
               </motion.div>
             );
           })}
+        </div>
+        <div className="w-full min-[1190px]:h-[16vw] rounded-xl overflow-hidden">
+          <SchoolMap />
         </div>
       </section>{" "}
     </div>
