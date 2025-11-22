@@ -1,5 +1,6 @@
 import HeroSection from "@/components/landing/HeroSection";
-import TeachersLanding from "@/components/landing/Teachers";
+import RegisterConditionsLanding from "@/components/landing/RegisterConditions";
+import TeachersLanding from "@/components/landing/RegisterConditions";
 import GallerySection from "@/components/landing/SchoolIntrducing";
 import { SchoolWorkers } from "@/components/landing/SchoolWorkers";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroSection />
       <GallerySection />
       <SchoolWorkers />
+      <RegisterConditionsLanding />
       <div className="mt-100"></div>
     </div>
   );
